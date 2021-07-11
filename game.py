@@ -28,6 +28,7 @@ computer_choice = (random.choice(computer_options))
 print("I CHOSE:", computer_choice)
 
 # determine winner
+# display final results
 print("AND THE WINNER IS:")
 # source: https://thehelloworldprogram.com/python/python-game-rock-paper-scissors/
 if (player_choice == computer_choice):
@@ -47,14 +48,20 @@ elif (player_choice == "scissors"):
       print(player_choice, "cuts", computer_choice,"...YOU WIN! This time...")
     if (computer_choice == "rock"):
       print("ME!!!", computer_choice, "smashes", player_choice,". So sad, you lose!")
-else: "come back later"
+else: print("come back later")
  
 print("Test Commit")
-#asdfasfas
+
+
+#ADD a play again option
+restart_or_quit = input("PLAY AGAIN? Type 'yes' or 'no.'")
+
+if (restart_or_quit == "yes"):
+  python game.py
+elif (restart_or_quit == "no"):
+  exit()
+else: print("...please just say what you want next time")
+  exit()
 
 
 
-
-
-
-# display final results
