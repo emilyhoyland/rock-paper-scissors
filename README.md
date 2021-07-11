@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Class 2
+the real one
