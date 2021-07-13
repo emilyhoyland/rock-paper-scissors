@@ -9,10 +9,10 @@ load_dotenv() #loads content of .env file into script's environment
 
 player_name = os.getenv("PLAYER_NAME")  #Best practice: use all caps for .env variable
 
-print(player_name) #reads the variable from the environment #good to use same variable names as environment
+print("Hello",player_name) #reads the variable from the environment #good to use same variable names as environment
 
 #temp EXIT
-exit()
+
 
 #install environment
 #pip install python-dotenv

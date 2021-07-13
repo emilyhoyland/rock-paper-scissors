@@ -1,0 +1,6 @@
+#list the package names to be installed
+
+
+#install dotenv package
+python-dotenv
+
