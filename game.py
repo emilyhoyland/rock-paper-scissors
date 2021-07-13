@@ -6,16 +6,14 @@ print("Rock, Paper, Scissors, Shoot!")
 # ask for a user input
 # source: https://docs.python.org/3/library/functions.html#input
 player_choice = input("Please choose one of the following: 'rock,' 'paper,' or 'scissors.'")
-
+print("----------------")
 # validate user input
 
 if (player_choice == "rock") or (player_choice == "paper") or (player_choice == "scissors"):
-    print("VALID")
+    print("YOU CHOSE:", player_choice)
 else:
     print("BOOOOOO! WRONG! TRY AGAIN")
     exit()
-
-print("YOU CHOSE:", player_choice)
 
 
 # generate computer choice
@@ -26,6 +24,9 @@ computer_options = ["rock", "paper", "scissors"]
 computer_choice = (random.choice(computer_options))
 # random item from list
 print("I CHOSE:", computer_choice)
+
+print("----------------")
+
 
 # determine winner
 # display final results
@@ -50,18 +51,13 @@ elif (player_choice == "scissors"):
       print("ME!!!", computer_choice, "smashes", player_choice,". So sad, you lose!")
 else: print("come back later")
  
-print("Test Commit")
 
 
-#ADD a play again option
-restart_or_quit = input("PLAY AGAIN? Type 'yes' or 'no.'")
 
-if (restart_or_quit == "yes"):
-  python game.py
-elif (restart_or_quit == "no"):
-  exit()
-else: print("...please just say what you want next time")
-  exit()
+#ADD a play again option?
+#restart_or_quit = input("PLAY AGAIN? Type 'yes' or 'no.'")
+
+
 
 
 
