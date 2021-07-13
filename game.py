@@ -1,6 +1,25 @@
-# game.py
+# to launch: python game.py
+
+#imports
+import random
+import os 
+from dotenv import load_dotenv
+
+load_dotenv() #loads content of .env file into script's environment
+
+player_name = os.getenv("PLAYER_NAME")  #Best practice: use all caps for .env variable
+
+print(player_name) #reads the variable from the environment #good to use same variable names as environment
+
+#temp EXIT
+exit()
+
+#install environment
+#pip install python-dotenv
 
 print("Rock, Paper, Scissors, Shoot!")
+
+
 
 
 # ask for a user input
@@ -18,7 +37,6 @@ else:
 
 # generate computer choice
 # source: https://pynative.com/python-random-choice/#h-python-random-choice-function
-import random
 
 computer_options = ["rock", "paper", "scissors"]
 computer_choice = (random.choice(computer_options))
