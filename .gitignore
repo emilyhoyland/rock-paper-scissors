@@ -1,0 +1,7 @@
+#list names of file not wanted to be tracked in version control and prevent from being uploaded
+#add before the other files, if not created WITH the repo
+
+# i.e., secret credentials and data files
+
+#environment
+.env
