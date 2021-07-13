@@ -1,6 +1,0 @@
-#list names of file not wanted to be tracked in version control and prevent from being uploaded
-
-# i.e., secret credentials and data files
-
-#environment
-.env
