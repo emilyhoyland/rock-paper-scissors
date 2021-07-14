@@ -46,4 +46,4 @@ Run the Python script:
 python game.py
 ```
 
-NOTE: User input is CASE SENSITIVE
+Follow input prompts as requested to complete gameplay 
