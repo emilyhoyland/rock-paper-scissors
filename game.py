@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv() #loads content of .env file into script's environment
 
-player_name = os.getenv("PLAYER_NAME")  #Best practice: use all caps for .env variable
+player_name = os.getenv("PLAYER_NAME")  #Best practice: use all caps for .env variable # Reads variable from .env
 
-game_name = ("Rock, Paper, Scissors, Shoot!")
+
 
 print("Hello",player_name) #reads the variable from the environment #good to use same variable names as environment
 
@@ -17,6 +17,8 @@ print("Would you like to play a game?")
 enter_game = input("YES or NO")
 
 print("----------------")
+
+game_name = ("Rock, Paper, Scissors, Shoot!")
 
 if (enter_game == "YES"):
   print(game_name)
