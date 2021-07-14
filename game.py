@@ -9,17 +9,22 @@ load_dotenv() #loads content of .env file into script's environment
 
 player_name = os.getenv("PLAYER_NAME")  #Best practice: use all caps for .env variable
 
+game_name = ("Rock, Paper, Scissors, Shoot!")
+
 print("Hello",player_name) #reads the variable from the environment #good to use same variable names as environment
 
-#temp EXIT
+print("Would you like to play a game?")
+enter_game = input("YES or NO")
 
+print("----------------")
+
+if (enter_game == "YES"):
+  print(game_name)
+else:
+  exit()
 
 #install environment
 #pip install python-dotenv
-
-print("Rock, Paper, Scissors, Shoot!")
-
-
 
 
 # ask for a user input
